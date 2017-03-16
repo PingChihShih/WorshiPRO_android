@@ -1,5 +1,6 @@
 package com.worship.worshipro_android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -41,11 +42,22 @@ public class MainActivity extends AppCompatActivity
 
        // toggle.syncState();
 
-        ImageButton ib = (ImageButton) findViewById(R.id.side_menu);
-        ib.setOnClickListener(new View.OnClickListener() {
+        ImageButton ibleft = (ImageButton) findViewById(R.id.side_menu);
+        ibleft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 drawer.openDrawer(GravityCompat.START);
+            }
+        });
+
+        ImageButton ibright = (ImageButton) findViewById(R.id.user);
+        ibright.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, profile.class);
+                startActivity(intent);
+                MainActivity.this.finish();
             }
         });
 
