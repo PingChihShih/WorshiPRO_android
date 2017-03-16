@@ -31,7 +31,7 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />-->
 
         <RelativeLayout
-            android:orientation="horizontal"
+
             android:gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -41,19 +41,21 @@
 
             <ImageButton
                 android:id="@+id/side_menu"
-                android:layout_width="40dp"
+                android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/menu"
                 android:scaleType="fitCenter"
                 android:layout_alignParentLeft="true"
-               
-                android:background="@color/colorTransparent"/>
+                android:background="@color/colorTransparent"
+                android:onClick="myOnClickMethod"/>
 
             <ImageView
-                android:layout_centerHorizontal="true"
+                android:id="@+id/main_title"
                 android:layout_width="280dp"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:src="@drawable/title"/>
 
 
