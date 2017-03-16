@@ -47,7 +47,7 @@
                 android:scaleType="fitCenter"
                 android:layout_alignParentLeft="true"
                 android:background="@color/colorTransparent"
-                android:onClick="myOnClickMethod"/>
+               />
 
             <ImageView
                 android:id="@+id/main_title"
