@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-      //  setSupportActionBar(toolbar);
+
+        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -40,10 +41,15 @@ public class MainActivity extends AppCompatActivity
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, null, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
+<<<<<<< HEAD
        // toggle.syncState();
 
         ImageButton ibleft = (ImageButton) findViewById(R.id.side_menu);
         ibleft.setOnClickListener(new View.OnClickListener() {
+=======
+        ImageButton ib = (ImageButton) findViewById(R.id.side_menu);
+        ib.setOnClickListener(new View.OnClickListener() {
+>>>>>>> e643601a625c2e92246fc5666e45b326f41974ed
             @Override
             public void onClick(View v) {
                 drawer.openDrawer(GravityCompat.START);
