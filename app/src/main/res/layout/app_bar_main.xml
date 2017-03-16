@@ -38,7 +38,7 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/side_menu"
+                android:id="@+id/menu"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/menu"
