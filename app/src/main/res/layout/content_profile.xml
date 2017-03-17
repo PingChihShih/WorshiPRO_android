@@ -14,8 +14,49 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Hello World!"
+
+            />
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="175dp"
+            android:weightSum="2">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                     />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
 
 
-
+            </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Hello World!" />
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
     </LinearLayout>
+
+
 </android.support.v4.widget.NestedScrollView>
