@@ -7,4 +7,6 @@
     <color name="colorbuttom">#448aca</color>
     <color name="colorwhite">#ffffffff</color>
     <color name="colorblack">#000000</color>
+    <color name="colorprimaryLight">#796394</color>
+    <color name="colorBar">#71717f </color>
 </resources>

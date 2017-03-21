@@ -36,11 +36,12 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, null, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
-       // toggle.syncState();
+        // toggle.syncState();
 
         ImageButton ibleft = (ImageButton) findViewById(R.id.side_menu);
         ibleft.setOnClickListener(new View.OnClickListener() {

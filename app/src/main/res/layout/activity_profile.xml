@@ -8,13 +8,11 @@
     android:fitsSystemWindows="true"
     tools:context="com.worship.worshipro_android.profile">
 
-
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:theme="@style/AppTheme.AppBarOverlay">
-
 
             <ImageButton
                 android:id="@+id/Home"
@@ -25,31 +23,45 @@
                 android:background="@color/colorTransparent"
                 android:layout_alignParentTop="true" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_gravity="end"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:weightSum="2">
-            <Button
-                android:text="friends"
-                android:textSize="12sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:id="@+id/frined"
-                android:layout_weight="1"/>
-            <Button
-                android:text="following"
-                android:textSize="12sp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:id="@+id/following"
-                android:layout_weight="1"/>
-        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="bottom|end">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <Button
+                        android:text="friends"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:id="@+id/frined"
+                        android:background="@color/colorprimaryLight"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:text="following"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:id="@+id/following"
+                        android:background="@color/colorprimaryLight"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_profile"

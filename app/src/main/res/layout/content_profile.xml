@@ -8,7 +8,6 @@
     tools:context="com.worship.worshipro_android.profile"
     tools:showIn="@layout/activity_profile">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,9 +37,12 @@
                     android:textSize="16dp"
                     android:text="Edit" />
             </RelativeLayout>
-            <Space
-                android:layout_width="20dp"
+            <View
+                android:layout_width="2dp"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/colorBar"
+
                 />
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -54,10 +56,12 @@
                     android:text="Edit" />
             </RelativeLayout>
         </LinearLayout>
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +69,9 @@
             android:textColor="@color/colorPrimaryDark"
             android:textSize="18dp"
             android:text="人生無極限" />
+
     </LinearLayout>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,9 +87,8 @@
 
     <Button
         android:id="@+id/more"
-        android:layout_gravity="bottom"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:textSize="20dp"
         android:textColor="@color/colorwhite"
         android:text="more"
